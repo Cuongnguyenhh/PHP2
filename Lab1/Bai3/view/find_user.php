@@ -1,4 +1,4 @@
-<?php 
+<?php
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,5 +14,9 @@
         <button type="submit" name="find">Find</button>
     </form>
 <div class="output"><span><?php ?></span></div>
+<?php if(isset($_GET['find'])){
+    $name=$info['firstname']."".$info['lastname'];
+    echo $name;
+}?>
 </body>
 </html>
