@@ -17,7 +17,18 @@ class Acc{
         $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $info_user = $stmt->fetchAll();
         return $info_user;
+    }
 
+    public function getAll_user(){
+        require_once '../model/Connect.php';
+        $connn = new ConnectDb('localhost', 'root', '');
+        $conn = $connn->get_con();
+        $stmt = $conn->prepare("SELECT * FROM `user`");
+        $stmt->execute();
+        // set the resulting array to associative
+        $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        $info_user = $stmt->fetchAll();
+        return $info_user;
     }
 
 }

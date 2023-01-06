@@ -1,4 +1,5 @@
 <?php
+namespace Core;
 class  ConnectDb{
     private $servername;
     private $username;
@@ -20,6 +21,7 @@ class  ConnectDb{
         }
         return $conn;
     }
+
 }
 
 $conn = new ConnectDb('localhost', 'root', '');

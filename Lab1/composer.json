@@ -1,0 +1,16 @@
+{
+    "name": "autoload/class",
+    "description": "load class",
+    "type": "library",
+    "authors": [
+        {
+            "name": "cuong"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Bai3/model/"
+        }
+    }
+}
