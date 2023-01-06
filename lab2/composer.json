@@ -1,0 +1,16 @@
+{
+    "name": "bai4/autoload",
+    "description": "test autolaod",
+    "type": "libary",
+    "authors": [
+        {
+            "name": "Cuong"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/"
+        }
+    }
+}
