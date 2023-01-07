@@ -1,5 +1,4 @@
 <?php
-namespace Core;
 class  ConnectDb{
     private $servername;
     private $username;

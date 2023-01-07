@@ -9,9 +9,12 @@
 require_once 'vendor/autoload.php';
 
 use Core\Database;
+use Core\Person;
 
 $database = new Database();
-$database->HelloWorld();
+//$database->HelloWorld();
+$person = new Person();
+$person->sayHi();
 ?>
 <!doctype html>
 <html lang="en">
