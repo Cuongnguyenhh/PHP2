@@ -7,7 +7,9 @@
             "name": "cuong"
         }
     ],
-    "require": {},
+    "require": {
+      "ext-mysqli": "*"
+    },
     "autoload": {
         "psr-4": {
             "Core\\": "Bai3/model/"

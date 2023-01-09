@@ -8,10 +8,23 @@ Class Database{
 	private $result=null;
     public function __construct(){
         // Thực thi câu lệnh kết nối CSDL ở đây
+        $conn = new PDO("mysql:host=$this->severname;dbname=myDB", $this->username, $this->password);
+        // set the PDO error mode to exception
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $conn;
+        }
+
+
+// Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        echo "Connected successfully";
+        return $conn;
     }
     // Hàm thực thi câu lênh SQL
     public function query($query){
-        // Code 
+
     }
     // thực hiện câu lệnh select return data
     public function fetch(){
@@ -26,7 +39,7 @@ Class Database{
         // Return Number
     }
     public function __destruct(){
-        // Đóng kết nối
+    $conn->close();
     }   
 }
 
