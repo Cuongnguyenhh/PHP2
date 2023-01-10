@@ -1,0 +1,23 @@
+{
+    "name": "boss/mvc_simple",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "app\\core\\": "Core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "greg-aires",
+            "email": "hiepdt2909@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "app\\core\\": "Core/"
+
+        }
+    }
+}
