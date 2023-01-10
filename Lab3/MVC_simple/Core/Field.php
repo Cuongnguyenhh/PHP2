@@ -16,7 +16,7 @@ class Field{
         return sprintf(
             '
        <div class="form-group">
-        <label for="">%S</label>
+        <label for="">%s</label>
         <input type="%s" name="%s">
        </div>
        ',

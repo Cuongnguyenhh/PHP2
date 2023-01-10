@@ -1,12 +1,12 @@
 <?php
 namespace app\core;
-use Field;
+use Core\Field;
 class Form {
     public static function begin($action,$method)
     {
         echo sprintf('<form action = "%s" method="%s" >', $action, $method);
         return new Form();
-        
+
     }
     public static function end()
     {
@@ -17,4 +17,3 @@ class Form {
         return new Field($attribute);
     }
 }
-?>

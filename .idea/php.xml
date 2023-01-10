@@ -13,6 +13,7 @@
     <include_path>
       <path value="$PROJECT_DIR$/Lab1" />
       <path value="$PROJECT_DIR$/Lab1/vendor/composer" />
+      <path value="$PROJECT_DIR$" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2">
